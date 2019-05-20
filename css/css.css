@@ -45,3 +45,20 @@ h2 {
   font-weight: 800;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
 }
+
+.button:hover {
+  background-image: linear-gradient(to right, #56b6f5 , #603078);
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  box-shadow: 0px 16px 10px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 0.9rem !important;
+    max-width: 312px;
+    height: 3rem;
+  }
+}
