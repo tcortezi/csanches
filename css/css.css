@@ -7,6 +7,71 @@
   color: #d3c2e1;
 }
 
+.section.first_pdv {
+  color: #d3c2e1;
+  position: relative;
+  height: 660px;
+}
+
+.section.first_pdv > .bg {
+  background-color: #322d41;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-2.5deg);
+  transform-origin: top left;
+}
+
+.section.testimonials {
+  position: relative;
+}
+
+.section.testimonials > .bg {
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-2.5deg);
+  transform-origin: top left;
+}
+
+.section.guarantee {
+  background-color: #322d41;
+  color: #d3c2e1;
+}
+
+.section.first_pdv strong {
+  color: #d3c2e1;
+}
+
+.countdown_bg {
+  background-color: rgba(0,0,0,0.25);
+}
+
+.btn_div {
+  margin-top: -4rem;
+}
+
+.hcolor {
+  color: #56b6f5;
+}
+
+.dcolor {
+  color: #603078;
+}
+
+span.bg {
+  background-color: #56b6f5;
+}
+
 hr.s-space {
   background-color: unset;
   border: none;
@@ -47,7 +112,7 @@ h2 {
 }
 
 .button:hover {
-  background-image: linear-gradient(to right, #56b6f5 , #603078);
+  background-image: linear-gradient(to right, #56b6f5 , #56b6f5);
   border: 0;
   color: white;
   text-transform: uppercase;
@@ -55,7 +120,73 @@ h2 {
   box-shadow: 0px 16px 10px rgba(0,0,0,0.25);
 }
 
+.cards {
+  width: 325px;
+  margin-top: 0.5rem;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.857143%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+.video {
+  border-radius: 25px;
+}
+
+.video:hover {
+    -webkit-filter: brightness(150%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    box-shadow: 0px 16px 10px rgba(0,0,0,0.25);
+}
+
 @media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    line-height: 34px;
+  }
   .button {
     font-size: 0.9rem !important;
     max-width: 312px;
